@@ -1,0 +1,10 @@
+# Site settings
+title: Alicia-Robles
+email: your-email@domain.com
+baseurl: "/alicia-robles-art" # the subpath of your site, e.g. /blog/
+url: "http://yourdomain.com" # the base hostname & protocol for your site
+twitter_username: jekyllrb
+github_username:  jekyll
+
+# Build settings
+markdown: kramdown

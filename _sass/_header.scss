@@ -1,0 +1,53 @@
+body {
+	background: rgb(248, 248, 248);
+}
+
+.site-header {
+	display: flex;
+
+	> div:first-child {
+		flex: 1;
+		// background: yellow;
+	}
+
+	> div:last-child {
+		flex: 3;
+		margin-right: 40px;
+		background: #f1f1f1;
+	}
+}
+
+.primary-logo {
+	text-align: right;
+
+	img {
+		display: inline-block;
+		margin-right: 45px;
+	}
+}
+
+.primary-title {
+	display: flex;
+	align-items: center;
+
+	h1 {
+		margin: 0 auto;
+		margin-top: 31px;
+		text-align: center;
+		font-size: 4.2em;
+	}
+}
+
+.primary-tabs {
+	display: flex;
+	justify-content: space-between;
+	// background: pink;
+
+	a {
+		// background: red;
+		background: #e6e6e6;
+		padding: 3px 80px;
+		text-align: center;
+		font-size: 2.3em;
+	}
+}

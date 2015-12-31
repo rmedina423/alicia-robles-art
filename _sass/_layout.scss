@@ -1,0 +1,22 @@
+/**
+ * Site header
+ */
+
+
+.site-header {}
+
+ @include media-query($on-laptop) {}
+
+
+/**
+ * Site footer
+ */
+
+.site-footer {}
+
+
+/**
+ * Page content
+ */
+
+ .page-content {}
