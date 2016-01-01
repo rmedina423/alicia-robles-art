@@ -7,6 +7,17 @@
 
  @include media-query($on-laptop) {}
 
+ /**
+ * Carousel
+ */
+
+#carousel {
+	background: #f1f1f1;
+	margin: 40px 47px;
+	height: calc(100vh - 272px);
+}
+
+
 
 /**
  * Site footer
