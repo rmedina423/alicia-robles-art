@@ -40,7 +40,9 @@ ul, ol, dl, figure,
  */
 h1 {
     font-family: 'Vast Shadow', cursive;
+    font-size: 4em;
     text-transform: uppercase;
+    text-align: center;
 }
 
 p,a {
@@ -54,6 +56,7 @@ p,a {
 
 a {
     display: inline-block;
+    text-align: center;
 }
 
 

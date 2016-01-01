@@ -14,7 +14,27 @@
 #carousel {
 	background: #f1f1f1;
 	margin: 40px 47px;
-	height: calc(100vh - 272px);
+	min-height: calc(100vh - 272px);
+}
+
+
+ /**
+ * About Section
+ */
+
+.about {
+	background: #f1f1f1;
+	min-height: calc(100vh - 80px);
+	margin: 40px 47px;
+	padding: 40px;
+
+	.content-img {
+		background: #e6e6e6;
+		height: 200px;
+		width: 150px;
+		float: left;
+		margin-right: 24px;
+	}
 }
 
 
