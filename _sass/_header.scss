@@ -8,12 +8,11 @@
 
 .site-header > div {
 
-	> div:first-child {
+	.primary-logo img {
 		margin: 0 40px;
 	}
 
-	> div:last-child {
-		background: #f1f1f1;
+	> div:last-child { // Come up with a class name here
 		flex: 1;
 		position: relative;
 
@@ -26,10 +25,10 @@
 	}
 }
 
-.primary-title {
-	h1 {
-		margin: 0;
-	}
+.primary-title h1 {
+	height: calc(192px - 61px); // Create variable for .site-header "height".
+	margin: 0;
+	font-size: 5.85em;
 }
 
 .primary-tabs {
@@ -37,10 +36,10 @@
 	justify-content: space-between;
 
 	a {
-		background: #e6e6e6;
+		background: #B20000;
 		width: 32.5%;
 		padding: 3px 0;
 		font-size: 2.3em;
-		border: 2px solid black;
+		color: #fff;
 	}
 }
