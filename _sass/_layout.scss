@@ -1,3 +1,16 @@
+
+body > div > div > div {
+	&:not(#carousel) {
+		min-height: calc(100vh - 80px);
+		padding: 40px;
+	}
+
+	margin: 40px 47px;
+	color: #fff;
+	background: #121213;
+	// background: radial-gradient(rgba(18, 18, 19, 0.95), #121213);
+}
+
 /**
  * Site header
  */
@@ -12,9 +25,22 @@
  */
 
 #carousel {
-	background: #f1f1f1;
-	margin: 40px 47px;
-	min-height: calc(100vh - 272px);
+	.slide-1, .slide-2, .slide-3 {
+		background-size: contain;
+		min-height: calc(100vh - 272px);	
+	}
+
+	.slide-1 {
+		background: url("./images/slide-1-ar.jpg");
+	}
+
+	.slide-2 {
+		background-image: url("./images/slide-1-ar.jpg");
+	}
+
+	.slide-3 {
+		background-image: url("./images/slide-1-ar.jpg");
+	}
 }
 
 
@@ -23,18 +49,24 @@
  */
 
 .about {
-	background: #f1f1f1;
-	min-height: calc(100vh - 80px);
-	margin: 40px 47px;
-	padding: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 
-	.content-img {
-		background: #e6e6e6;
-		height: 200px;
-		width: 150px;
-		float: left;
-		margin-right: 24px;
+	p {
+		max-width: 650px;
+		text-align: center;
 	}
+
+	// .content-img {
+	// 	// background: radial-gradient(rgba(0, 142, 168, 0.27), #008EA8), url("./images/profile-pic.jpg");
+	// 	// background: url("./images/profile-pic.jpg"), #000;
+	// 	// background-size: contain;
+	// 	height: 200px;
+	// 	width: 150px;
+	// 	float: left;
+	// 	margin-right: 24px;
+	// }
 }
 
 
@@ -43,11 +75,6 @@
  */
 
 .portfolio {
-	background: #f1f1f1;
-	min-height: calc(100vh - 80px);
-	margin: 40px 47px;
-	padding: 40px;
-
 	.content {
 		display: flex;
 		-webkit-flex-flow: row wrap;
@@ -56,17 +83,14 @@
 		padding: 0;
 
 		a {
-			background: #e6e6e6;
 			width: 268px;
 			min-height: 250px;
-			padding: 5px;
 			margin-top: 10px;
 
 			display: flex;
 			align-items: center;
 		}
 		img {
-			// height: 160px;
 			margin: auto;
 		}
 	}
@@ -78,14 +102,11 @@
  * Contact Section
  */
 
-.contact{
-	background: #f1f1f1;
-	min-height: calc(100vh - 80px);
-	margin: 40px 47px;
-	padding: 40px 5.658%
-}
-
 .contact form {
+	max-width: 500px;
+	margin: auto;
+	color: #121213;
+
 	> div {
 		display: flex;
 		margin-top: 20px;
@@ -98,11 +119,17 @@
 	input.submit {
 		margin: 0 auto;
 		width: 235px;
+		font-weight: bold;
+		color: #121213;
 	}
 
 	input, textarea {
-		border: 2px solid #DFDFDF;
+		padding-left: 18px;
 		height: 40px;
+		// border: 2px solid #DFDFDF;
+		border: none;
+		font-weight: bold;
+		color: #121213;
 		background-color: #fff;
 	}
 
@@ -110,24 +137,24 @@
 		height: 100%;
 	}
 
-	label[for~=name] {		
-		align-items: center;
-	}
+	// label[for~=name] {		
+	// 	align-items: center;
+	// }
 
-	label[for~=message] {		
-		margin-top: 10px;
-	}
+	// label[for~=message] {		
+	// 	margin-top: 10px;
+	// }
 
-	label {
-		display: flex;
-		justify-content: flex-end;
-		width: 80px;
-		margin-right: 30px;
-	}
+	// label {
+	// 	display: flex;
+	// 	justify-content: flex-end;
+	// 	width: 80px;
+	// 	margin-right: 30px;
+	// }
 
-	label, > div:last-child input {
-		text-transform: uppercase;
-	}
+	// label, > div:last-child input {
+	// 	text-transform: uppercase;
+	// }
 	
 }
 
