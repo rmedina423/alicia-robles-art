@@ -19,7 +19,7 @@ html {
 }
 
 body {
-    background: #f8f8f8;;
+    background: #fff;
 }
 
 
@@ -39,13 +39,16 @@ ul, ol, dl, figure,
  * Set `font-family` & text-transform
  */
 h1 {
-    font-family: 'Vast Shadow', cursive;
     font-size: 4em;
     text-transform: uppercase;
     text-align: center;
 }
 
-p,a {
+p, input, textarea {
+    font-size: 1.3em;
+}
+
+h1, p, a, input, textarea {
     font-family: 'Slabo 27px', serif;
 }
 
