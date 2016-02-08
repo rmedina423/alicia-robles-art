@@ -1,26 +1,16 @@
 .site-header {
-	padding: 0 47px;
-
-	> div {
-		display: flex;
-	}
+	padding: 0 10px;
 }
 
 .site-header > div {
-
-	.primary-logo img {
-		margin: 0 40px;
-	}
-
-	> div:last-child { // Come up with a class name here
-		flex: 1;
+	.primary-logo {
+		display: none;
 	}
 }
 
 .primary-title h1 {
-	height: calc(192px - 61px); // Create variable for .site-header "height".
 	margin: 0;
-	font-size: 5.85em;
+	font-size: 2.6em;
 }
 
 .primary-tabs {
@@ -31,7 +21,94 @@
 		background: #B20000;
 		width: 32.5%;
 		padding: 3px 0;
-		font-size: 2.3em;
+		font-size: 1.5em;
 		color: #fff;
+	}
+}
+
+// This is code to keep the logo on mobile/landscape
+
+// @include media-query($on-palm) {
+// 	.site-header {
+// 		padding: 0 22px;
+
+// 		> div {
+// 			display: flex;
+// 		}
+// 	}
+
+// 	.site-header > div {
+
+// 		.primary-logo {
+// 			display: flex;
+// 			align-items: center;
+// 		}
+
+// 		.primary-logo img {
+// 			height: 95px;
+// 			margin: 0 20px 8px 20px;
+// 		}
+
+// 		> div:last-child {
+// 			flex: 1;
+// 		}
+// 	}
+// }
+
+@include media-query($on-palm) {
+	.site-header {
+		padding: 0 22px;
+
+	}
+
+	.primary-title h1 {
+		font-size: 4.1em;
+	}
+
+	.primary-tabs a {
+		padding: 4px 0;
+		font-size: 1.6em;
+	}
+}
+
+@include media-query($on-inBetween) {
+	.site-header {
+		padding: 0 47px;
+
+	}
+
+	.primary-title h1 {
+		font-size: 5.5em;
+	}
+
+	.primary-tabs a {
+		padding: 3px 0;
+		font-size: 2.3em;
+	}
+}
+
+@include media-query($on-laptop) {
+	.site-header > div {
+		display: flex;
+	}
+
+	.site-header > div {
+
+		.primary-logo {
+			display: initial;
+		}
+
+		.primary-logo img {
+			margin: 0 40px;
+		}
+
+		> div:last-child { // Come up with a class name here
+			flex: 1;
+		}
+	}
+
+	.primary-title h1 {
+		height: calc(192px - 61px); // Create variable for .site-header "height".
+		font-size: 5.85em;
 	}
 }
