@@ -14,14 +14,6 @@
 
 	> div:last-child { // Come up with a class name here
 		flex: 1;
-		position: relative;
-
-		> div {
-			position: absolute;
-			bottom: 0;
-			left: 0;
-			right: 0;
-		}
 	}
 }
 
