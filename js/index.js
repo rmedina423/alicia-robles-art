@@ -26,4 +26,12 @@ $( document ).ready(function() {
 		
 	})
 
+	// init Masonry
+	var $portfolioContent = $('.portfolio .content').masonry();
+
+	// layout Masonry after each image loads
+	$portfolioContent.imagesLoaded().progress( function() {
+		$portfolioContent.masonry('layout');
+	});
+
 })
