@@ -1,29 +1,25 @@
-$( document ).ready(function() {
+$(document).ready(function() {
+
+	function targetPosition(element) {
+
+		var $targetClass = $(element.attr('href'))
+		var elementPosition = $targetClass.offset().top
+		var marginTop = $targetClass.css('margin-top').replace(/[^\d]/g, "")
+		var parsedMargin = parseInt(marginTop)
+
+		return elementPosition - parsedMargin
+	}
+
 
 	$('.primary-tabs a').on('click', function(event) {
 		event.preventDefault()
 
-		var $currentTarget = $(event.currentTarget)
-		var targetHref = $currentTarget.attr('href')
+		var $this = $(this)
 
-		if (targetHref === '#about') {
-			$('html, body').animate({
-				scrollTop: $('.about').offset().top
-			}, 500);
-		}
+		$('html, body').animate({
+			scrollTop: targetPosition($this)
+		}, 500);
 
-		if (targetHref === '#portfolio') {
-			$('html, body').animate({
-				scrollTop: $('.portfolio').offset().top
-			}, 500);
-		}
-
-		if (targetHref === '#contact') {
-			$('html, body').animate({
-				scrollTop: $('.contact').offset().top
-			}, 500);
-		}
-		
 	})
 
 	// init Masonry
