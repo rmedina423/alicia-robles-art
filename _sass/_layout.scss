@@ -18,12 +18,12 @@
 	margin: 10px;
 
 	.slide-1, .slide-2, .slide-3 {
-		background-size: contain;
+		background-size: cover;
 		min-height: calc(100vh - 125px);
 	}
 
 	.slide-1 {
-		background: url("./images/slides/slide-1-ar.jpg");
+		background-image: url("./images/slides/creature-banner.jpg");
 	}
 
 	.slide-2 {
