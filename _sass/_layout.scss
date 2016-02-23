@@ -16,22 +16,27 @@
 
 #carousel {
 	margin: 10px;
+	margin-bottom: 35px;
 
 	.slide-1, .slide-2, .slide-3 {
 		background-size: cover;
-		min-height: calc(100vh - 125px);
+		min-height: calc(100vh - 150px);
 	}
 
 	.slide-1 {
-		background-image: url("./images/slides/creature-banner.jpg");
+		background-image: url("./images/slides/creature-banner-resize.jpg");
 	}
 
 	.slide-2 {
-		background-image: url("./images/slides/slide-1-ar.jpg");
+		background-image: url("./images/slides/slide-1-ar-resize.jpg");
 	}
 
 	.slide-3 {
-		background-image: url("./images/slides/slide-1-ar.jpg");
+		background-image: url("./images/slides/slide-1-ar-resize.jpg");
+	}
+
+	.slick-dots li button:before {
+		font-size: 11px;
 	}
 
 }
@@ -42,6 +47,8 @@
  */
 
 .portfolio .content {
+	// max-width: 823px; uncomment when receive resized images
+	// margin: 0 auto;
 	a {
 		display: block;
 		float: left;
@@ -107,11 +114,12 @@
 		}
 		
 		margin: 22px;
+		margin-bottom: 37px;
 	}
 
 	#carousel {
 		.slide-1, .slide-2, .slide-3 {
-			min-height: calc(100vh - 190px);
+			min-height: calc(100vh - 205px);
 		}
 	}
 
