@@ -33,8 +33,9 @@ $(document).ready(function() {
 
 	$contactForm.submit(function(event) {
 		event.preventDefault();
+
 		$.ajax({
-			url: '//formspree.io/rmedina423@gmail.com',
+			url: '//formspree.io/aliciaroblesart@gmail.com',
 			method: 'POST',
 			data: $(this).serialize(),
 			dataType: 'json',
