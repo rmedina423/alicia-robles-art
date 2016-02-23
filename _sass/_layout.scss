@@ -103,7 +103,31 @@
 
 	textarea#message {
 		height: 100%;
-	}	
+	}
+
+	.alert {
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 220px;
+		margin: 0;
+		padding: 10px;
+		background: rgba(255, 255, 255, 0.5);
+		font-size: 24px;
+		font-family: 'Slabo 27px', serif;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.alert--loading {
+		color: #B20000;
+	}
+
+	.alert--success {
+		color: #121213;
+	}
 }
 
 @include media-query($on-palm) {
