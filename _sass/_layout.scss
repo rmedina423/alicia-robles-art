@@ -47,8 +47,8 @@
  */
 
 .portfolio .content {
-	// max-width: 823px; uncomment when receive resized images
-	// margin: 0 auto;
+	max-width: calc((311px + 14px) * 3 );
+	margin: 0 auto;
 	a {
 		display: block;
 		float: left;
@@ -102,7 +102,7 @@
 	}
 
 	textarea#message {
-		height: 100%;
+		height: 230px;
 	}
 
 	.alert {
@@ -128,7 +128,18 @@
 	.alert--success {
 		color: #121213;
 	}
+
+	.icon-container {
+		justify-content: center;
+		font-size: 35px;
+
+		.fa {
+			padding: 0 12px;
+			color: #FFF;
+		}
+	}
 }
+
 
 @include media-query($on-palm) {
 	.about, .portfolio, .contact, #carousel {
