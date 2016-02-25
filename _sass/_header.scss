@@ -26,35 +26,6 @@
 	}
 }
 
-// This is code to keep the logo on mobile/landscape
-
-// @include media-query($on-palm) {
-// 	.site-header {
-// 		padding: 0 22px;
-
-// 		> div {
-// 			display: flex;
-// 		}
-// 	}
-
-// 	.site-header > div {
-
-// 		.primary-logo {
-// 			display: flex;
-// 			align-items: center;
-// 		}
-
-// 		.primary-logo img {
-// 			height: 95px;
-// 			margin: 0 20px 8px 20px;
-// 		}
-
-// 		> div:last-child {
-// 			flex: 1;
-// 		}
-// 	}
-// }
-
 @include media-query($on-palm) {
 	.site-header {
 		padding: 0 22px;
