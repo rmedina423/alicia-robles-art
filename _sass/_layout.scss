@@ -15,11 +15,11 @@
  */
 
 #carousel {
-	margin: 10px;
+	display: none;
 	margin-bottom: 35px;
 
 	.slide-1, .slide-2, .slide-3 {
-		background-size: cover;
+		background-size: calc(100vh - 20px), 100%;
 		min-height: calc(100vh - 150px);
 	}
 
@@ -32,7 +32,7 @@
 	}
 
 	.slide-3 {
-		background-image: url("./images/slides/slide-1-ar-resize.jpg");
+		background-image: url("./images/slides/banner3.jpg");
 	}
 
 	.slick-dots li button:before {
@@ -54,6 +54,7 @@
 		float: left;
 		padding: 7px;
 		width: 100%;
+		cursor: default;
  	}
 }
 
@@ -161,6 +162,7 @@
 	.portfolio .content a {
 		margin-top: 10px;
 		width: 50%;
+		cursor: pointer;
 	}
 }
 
@@ -175,6 +177,8 @@
 	}
 
 	#carousel {
+		display: block;
+
 		.slide-1, .slide-2, .slide-3 {
 			min-height: calc(100vh - 287px);
 		}
