@@ -15,7 +15,7 @@
  */
 
 #carousel {
-	display: none;
+	// display: none;
 	margin-bottom: 35px;
 
 	.slide-1, .slide-2, .slide-3 {
@@ -25,15 +25,15 @@
 	}
 
 	.slide-1 {
-		background-image: url("./images/slides/creature-banner-resize.jpg");
+		background-image: url("./images/slides/slide1.jpg");
 	}
 
 	.slide-2 {
-		background-image: url("./images/slides/slide-1-ar-resize.jpg");
+		background-image: url("./images/slides/slide2.jpg");
 	}
 
 	.slide-3 {
-		background-image: url("./images/slides/banner3.jpg");
+		background-image: url("./images/slides/slide3.jpg");
 	}
 
 	.slick-dots li button:before {
