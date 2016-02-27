@@ -19,7 +19,8 @@
 	margin-bottom: 35px;
 
 	.slide-1, .slide-2, .slide-3 {
-		background-size: calc(100vh - 20px), 100%;
+		background-size: cover;
+		background-position: center;
 		min-height: calc(100vh - 150px);
 	}
 
