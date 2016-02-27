@@ -18,6 +18,7 @@
   "homepage": "https://github.com/rmedina423/fashion-site#readme",
   "dependencies": {
     "fancybox": "^3.0.0",
+    "font-awesome": "^4.5.0",
     "handlebars": "^4.0.4",
     "imagesloaded": "^4.1.0",
     "masonry-layout": "^4.0.0",
