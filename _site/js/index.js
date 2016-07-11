@@ -1,6 +1,6 @@
 function enableFancybox(browserVW) {
 	var $fancybox = $('.fancybox');
-	
+
 	if (browserVW >= 600) {
 		$fancybox.fancybox();
 	} else {
@@ -10,11 +10,11 @@ function enableFancybox(browserVW) {
 	}
 }
 
-function targetPosition(element) {
+function scrollToPosition(element) {
 
-	var $targetClass = $(element.attr('href'))
-	var elementPosition = $targetClass.offset().top
-	var marginTop = $targetClass.css('margin-top').replace(/[^\d]/g, "")
+	var $target = $(element.attr('href'))
+	var elementPosition = $target.offset().top
+	var marginTop = $target.css('margin-top').replace(/[^\d]/g, "")
 	var parsedMargin = parseInt(marginTop)
 
 	return elementPosition - parsedMargin
@@ -23,10 +23,8 @@ function targetPosition(element) {
 function tabOnClick(event) {
 	event.preventDefault()
 
-	var $this = $(this)
-
 	$('html, body').animate({
-		scrollTop: targetPosition($this)
+		scrollTop: scrollToPosition($(this))
 	}, 500);
 }
 
