@@ -1,0 +1,28 @@
+{
+  "name": "fashion-site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "git subtree push --prefix _site/ origin gh-pages"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rmedina423/fashion-site.git"
+  },
+  "author": "Ryan-Medina",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rmedina423/fashion-site/issues"
+  },
+  "homepage": "https://github.com/rmedina423/fashion-site#readme",
+  "dependencies": {
+    "fancybox": "^3.0.0",
+    "font-awesome": "^4.5.0",
+    "handlebars": "^4.0.4",
+    "imagesloaded": "^4.1.0",
+    "masonry-layout": "^4.0.0",
+    "normalize.css": "^3.0.3",
+    "slick-carousel": "^1.5.9"
+  }
+}
