@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function () {
 
 	function targetPosition(element) {
 
@@ -10,7 +10,7 @@ $(document).ready(function() {
 		return elementPosition - parsedMargin
 	}
 
-	$('.primary-tabs a').on('click', function(event) {
+	$('.primary-tabs a').on('click', function (event) {
 		event.preventDefault()
 
 		var $this = $(this)
@@ -18,20 +18,19 @@ $(document).ready(function() {
 		$('html, body').animate({
 			scrollTop: targetPosition($this)
 		}, 500);
-
 	})
 
 	// init Masonry
 	var $portfolioContent = $('.portfolio .content').masonry();
 
 	// layout Masonry after each image loads
-	$portfolioContent.imagesLoaded().progress( function() {
+	$portfolioContent.imagesLoaded().progress( function () {
 		$portfolioContent.masonry('layout');
 	});
 
 	var $contactForm = $('#contact-form');
 
-	$contactForm.submit(function(event) {
+	$contactForm.submit(function (event) {
 		event.preventDefault();
 
 		$.ajax({
@@ -39,11 +38,11 @@ $(document).ready(function() {
 			method: 'POST',
 			data: $(this).serialize(),
 			dataType: 'json',
-			beforeSend: function() {
+			beforeSend: function () {
 				$contactForm[0].reset();
 				$contactForm.append('<div class="alert alert--loading">Sending message…</div>');
 			},
-			success: function(data) {
+			success: function (data) {
 				$contactForm.find('.alert--loading').hide();
 				$contactForm.append('<div class="alert alert--success">Message sent!</div>');
 
@@ -51,11 +50,10 @@ $(document).ready(function() {
 					$('.alert').fadeOut();
 				}, 5000);
 			},
-			error: function(err) {
+			error: function (err) {
 				$contactForm.find('.alert--loading').hide();
 				$contactForm.append('<div class="alert alert--error">Ops, there was an error.</div>');
 			}
 		});
 	});
-
 })

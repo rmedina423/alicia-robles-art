@@ -1,5 +1,4 @@
-$(document).ready(function() {
-
+$(document).ready(function () {
 	var browserVW = $( window ).width();
 
 	if (browserVW >= 600) {
@@ -9,5 +8,4 @@ $(document).ready(function() {
 			event.preventDefault();
 		})
 	}
-
 });
